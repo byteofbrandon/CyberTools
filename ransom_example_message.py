@@ -4,6 +4,13 @@ from cryptography.fernet import Fernet
 
 # Generate a key (for testing, you can save it somewhere)
 key = Fernet.generate_key()
+
+#Uncomment the below code to create a file that can be used to decrypt the files, named fernet.key
+'''
+with open("fernet.key", "wb") as key_file:
+    key_file.write(key)
+'''
+
 cipher = Fernet(key)
 
 # Folder to “encrypt” (test folder, change as needed)
