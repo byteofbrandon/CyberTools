@@ -1,6 +1,6 @@
 # decrypt_files.py
 # Works in tandem to ransom_example
-# Simple example of how ransomware can decrypt files.
+# Way to decrypt files after running ransome_example.py
 
 from cryptography.fernet import Fernet
 import os
